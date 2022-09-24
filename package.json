@@ -4,6 +4,7 @@
   "description": "A library supporting a 3D grid of multiply nested hexagonal prisms tiling space",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "repository": {
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/rogerdubbs/hex-prism-grid/issues"
   },
-  "homepage": "https://github.com/rogerdubbs/hex-prism-grid#readme"
+  "homepage": "https://github.com/rogerdubbs/hex-prism-grid#readme",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
 }
