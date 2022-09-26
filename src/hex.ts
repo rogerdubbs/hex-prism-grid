@@ -35,6 +35,25 @@ export class Hex {
     }
   }
 
+  get depth(): number {
+    return Math.sqrt(
+      -((this.maximalDiameter / 2) * this.maximalDiameter) / 2 +
+        this.minimalDiameter * 2 * this.minimalDiameter * 2
+    );
+  }
+
+  get volume(): number {
+    return this.area * this.depth;
+  }
+
+  get sideLength(): number {
+    return this.maximalDiameter / 2;
+  }
+
+  get area(): number {
+    return (3 / 4) * this.width * this.height;
+  }
+
   get circumradius(): number {
     return this.size;
   }
