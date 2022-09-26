@@ -37,8 +37,7 @@ export class Hex {
 
   get depth(): number {
     return Math.sqrt(
-      -((this.maximalDiameter / 2) * this.maximalDiameter) / 2 +
-        this.minimalDiameter * 2 * this.minimalDiameter * 2
+      this.minimalDiameter * this.minimalDiameter - this.size * this.size
     );
   }
 
